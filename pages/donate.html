@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate</title>
+  </head>
+  <body>
+    <div id="donation-rules">
+      <ul id="rules">
+        <!--FIXME:add rules-->
+        <li></li>
+      </ul>
+    </div>
+    <form>
+      <fieldset>
+        <legend>Make a Donation</legend>
+        <div id="item-categories">
+          <!--FIXME:add categories-->
+          <input type="checkbox" class="category" name="" value="" />
+          <label for=""></label>
+        </div>
+        <div id="num-pkg-items">
+          <label for="num-items">
+            Number of Packaged Items for Donation (min: 1, max: 100)
+          </label>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="num-items"
+            name="num-items"
+          />
+        </div>
+
+        <div id="items-search">
+          <label for="item-list">Select Items</label>
+          <input
+            type="text"
+            placeholder="N/A"
+            list="items"
+            id="item-list"
+            name="item-list"
+          />
+          <datalist id="items">
+            <!--FIXME: add items-->
+            <option value=""></option>
+          </datalist>
+        </div>
+
+        <div id="money-donations">
+          <label for="money">Monetary Donation Amount</label>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="money"
+            name="money"
+            value="$ "
+          />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

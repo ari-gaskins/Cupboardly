@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Request</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Request Items</legend>
+        <div id="item-categories">
+          <!--FIXME:add categories-->
+          <input type="checkbox" class="category" name="" value="" />
+          <label for=""></label>
+        </div>
+        <div id="items-search">
+          <label for="item-list">Select Items</label>
+          <input
+            type="text"
+            placeholder="N/A"
+            list="items"
+            id="item-list"
+            name="item-list"
+          />
+          <datalist id="items">
+            <!--FIXME: add items-->
+            <option value=""></option>
+          </datalist>
+        </div>
+
+        <div id="item-request-submit" class="submit-button">
+            <input type="submit" id="submit" name="submit" value="Submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
