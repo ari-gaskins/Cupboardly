@@ -5,29 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link type="text/css" href="styles/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   </head>
   <body>
+    <!--FIXME: move scripts to javascript file-->
     <navbar-header>
       <!--FIXME: change to buttons for login page, home data on scroll-->
       <img src="images/Cupboardly_logo.jpg" alt="Cupboardly" id="logo" />
-    </navbar-header>
-    <nav id="menu">
-      <!--FIXME: add menu icon-->
-      <button type="button" id="menu-toggle">
-        <img src="images/menu_icon.png" alt="Menu" /
+
+      <button type="button" id="get-started">
+        <a href="pages/login.html">Get Started!</a>
       </button>
-      <p>Home</p>
-      <p>Donate</p>
-      <p>Item Request</p>
-      <p>Profile</p>
-      <p>About</p>
+    </navbar-header>
+    <script>
+      function openMenu() {
+        document.getElementById("open").style.visibility = "hidden";
+        document.getElementById("menu").style.visibility = "visible";
+      }
+    </script>
+    <button type="button" class="menu-toggle" id="open" onclick="openMenu()">
+      <img src="images/menu_icon.png" alt="Menu" width="36" height="36" />
+    </button>
+    <nav id="menu">
+      <script>
+        function closeMenu() {
+          document.getElementById("open").style.visibility = "visible";
+          document.getElementById("menu").style.visibility = "hidden";
+        }
+      </script>
+      <button
+        type="button"
+        class="menu-toggle"
+        id="close"
+        onclick="closeMenu()"
+      >
+        <img src="images/menu_icon.png" alt="Menu" width="36" height="36" />
+      </button>
+      <a href="index.html"><p>Home</p></a>
+      <a href="pages/donate.html"><p>Donate</p></a>
+      <a href="pages/item-request.html"><p>Item Request</p></a>
+      <p hidden>Profile</p>
+      <a href="pages/about.html"><p>About</p></a>
     </nav>
     <div id="food-pantry-img">
       <!--FIXME: add food pantry img-->
     </div>
     <div id="homepage-content">
       <!--FIXME: add homepage content-->
-      <div id="slogan"><h</div>
+      <div id="slogan">
+        <h2>ePantry Management Made Easy!</h2>
+      </div>
+      <div id="content">
+        <p>
+          Tracking the inventory of a pantry can be a tedious task that can take
+          up a lot of time.
+        </p>
+        <p>Request or donate items with ease to your local pantry today!</p>
+        <p>
+          Cupboardly is meant to add ease to the job of managing a pantry by
+          having a centralized hub of pantry services for a facility and its
+          users.
+        </p>
+      </div>
     </div>
   </body>
 </html>

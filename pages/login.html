@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link type="text/css" href="/styles/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>Login</header>
-    <form>
+    <!--FIXME: add page href to ask-user -->
+
+    <form method="POST" action="">
       <div id="login">
         <p>Login</p>
         <!--FIXME: make inputs appear as block types-->
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required />
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
+        <label for="username">
+          Username <input type="text" id="username" name="username" required />
+        </label>
+        <label for="password">
+          Password
+          <input type="password" id="password" name="password" required />
+        </label>
       </div>
       <div id="or-spacer">
         <p>OR</p>
@@ -23,7 +29,6 @@
       <div id="new-profile">
         <button>Create Profile</button>
       </div>
-      <!--FIXME: add page href to ask-user -->
       <div id="submit-login" class="submit-button">
         <input type="submit" id="submit" name="submit" value="Submit" />
       </div>

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Item Request</title>
+    <link type="text/css" href="/styles/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   </head>
   <body>
     <form>
@@ -12,8 +14,35 @@
         <legend>Request Items</legend>
         <div id="item-categories">
           <!--FIXME:add categories-->
-          <input type="checkbox" class="category" name="" value="" />
-          <label for=""></label>
+
+          <input
+            type="checkbox"
+            class="category"
+            name="money-donations"
+            value="money-donations"
+          />
+          <label for="money-donations">Money Donations</label>
+          <input
+            type="checkbox"
+            class="category"
+            name="canned-goods"
+            value="canned-goods"
+          />
+          <label for="canned-goods">Canned goods</label>
+          <input
+            type="checkbox"
+            class="category"
+            name="instant-quick-meals"
+            value="instant-quick-meals"
+          />
+          <label for="instant-quick-meals">Instant/quick meals</label>
+          <input
+            type="checkbox"
+            class="category"
+            name="snacks"
+            value="snacks"
+          />
+          <label for="snacks">Snacks</label>
         </div>
         <div id="items-search">
           <label for="item-list">Select Items</label>
@@ -31,7 +60,7 @@
         </div>
 
         <div id="item-request-submit" class="submit-button">
-            <input type="submit" id="submit" name="submit" value="Submit" />
+          <input type="submit" id="submit" name="submit" value="Submit" />
         </div>
       </fieldset>
     </form>
